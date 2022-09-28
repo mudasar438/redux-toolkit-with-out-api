@@ -6,6 +6,9 @@ import {useDispatch,useSelector} from  'react-redux'
 import {calculateTotals} from './feature/cart/cartSlice'
 import { useEffect } from 'react';
 import Modal from './Components/Modle';
+import Switch from './rehan'
+import Acti from './active'
+import {FirstItem} from './firstItem'
 
 
 function App() {
@@ -18,14 +21,18 @@ function App() {
   },[cartItems])
   return (
    <>
-   <div className="">
+   {/* <div className="">
     {
       isOpen && 
     <Modal/>
     }
     <Navbar/>
-    <CartContainer/>
-   </div>
+    <CartContainer/> */}
+   {/* </div> */}
+
+   <Switch/>
+   {/* <Acti/> */}
+   {/* <FirstItem/> */}
    </>
   );
 }
